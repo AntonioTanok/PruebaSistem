@@ -1,0 +1,60 @@
+<div class="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-md mt-8">
+  <!-- Título -->
+  <h2 class="text-3xl font-bold text-gray-800 text-center mb-6">Sistema de Consultas de Proveedores Tanok</h2>
+
+  <!-- Formulario de consulta -->
+  <form>
+    <!-- Número de registro, nombre/razón social o especialidad -->
+    <div class="mb-4">
+      <label for="registro" class="block text-sm font-medium text-gray-700">Número de registro, nombre/razón social o especialidad</label>
+      <input
+        type="text"
+        id="registro"
+        class="block w-full mt-1 p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
+        placeholder="Ingrese el número de registro o nombre"
+        required
+      />
+    </div>
+
+    <!-- Radio Buttons: Proveedor / Contratista -->
+    <div class="mb-4">
+      <span class="block text-sm font-medium text-gray-700">Seleccionar tipo:</span>
+      <div class="flex items-center mt-2">
+        <input
+          type="radio"
+          id="proveedor"
+          name="tipo"
+          class="mr-2"
+          value="proveedor"
+          required
+        />
+        <label for="proveedor" class="text-sm text-gray-700">Proveedor</label>
+
+        <input
+          type="radio"
+          id="contratista"
+          name="tipo"
+          class="ml-6 mr-2"
+          value="contratista"
+        />
+        <label for="contratista" class="text-sm text-gray-700">Contratista</label>
+      </div>
+    </div>
+
+    <!-- Botón de búsqueda reducido -->
+    <button
+      type="submit"
+      class="w-full sm:w-auto bg-blue-600 text-white py-1 px-4 rounded-lg hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-1 mb-4"
+    >
+      Buscar
+    </button>
+
+    <!-- Texto ¿No estás registrado? -->
+    <div class="text-center">
+      <p class="text-sm text-gray-600 font-medium">
+        ¿No estás registrado? 
+        <span class="text-blue-600 hover:text-blue-800 cursor-pointer">Haz clic aquí para registrarte</span>
+      </p>
+    </div>
+  </form>
+</div>
