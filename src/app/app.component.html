@@ -1,60 +1,82 @@
-<div class="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-md mt-8">
-  <!-- Título -->
-  <h2 class="text-3xl font-bold text-gray-800 text-center mb-6">Sistema de Consultas de Proveedores Tanok</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario con botón reducido</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
 
-  <!-- Formulario de consulta -->
-  <form>
-    <!-- Número de registro, nombre/razón social o especialidad -->
-    <div class="mb-4">
-      <label for="registro" class="block text-sm font-medium text-gray-700">Número de registro, nombre/razón social o especialidad</label>
-      <input
-        type="text"
-        id="registro"
-        class="block w-full mt-1 p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
-        placeholder="Ingrese el número de registro o nombre"
-        required
-      />
-    </div>
+  <!-- Formulario -->
+  <div class="p-6 bg-gray-100 min-h-screen">
+    <form class="w-full max-w-screen-lg mx-auto bg-white rounded-lg shadow-md p-8">
+      <!-- Título -->
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">Registro de Proveedor</h2>
 
-    <!-- Radio Buttons: Proveedor / Contratista -->
-    <div class="mb-4">
-      <span class="block text-sm font-medium text-gray-700">Seleccionar tipo:</span>
-      <div class="flex items-center mt-2">
-        <input
-          type="radio"
-          id="proveedor"
-          name="tipo"
-          class="mr-2"
-          value="proveedor"
-          required
-        />
-        <label for="proveedor" class="text-sm text-gray-700">Proveedor</label>
+      <!-- Contenedor de campos (grid de 2 columnas) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Campo: ID del proveedor -->
+        <div>
+          <label for="provider_id" class="block text-sm font-medium text-gray-700">ID del Proveedor</label>
+          <input
+            type="text"
+            id="provider_id"
+            class="block w-full mt-1 p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            placeholder="Ingresa el ID del proveedor"
+            required
+          />
+        </div>
 
-        <input
-          type="radio"
-          id="contratista"
-          name="tipo"
-          class="ml-6 mr-2"
-          value="contratista"
-        />
-        <label for="contratista" class="text-sm text-gray-700">Contratista</label>
+        <!-- Campo: Nombre del proveedor -->
+        <div>
+          <label for="provider_name" class="block text-sm font-medium text-gray-700">Nombre del Proveedor</label>
+          <input
+            type="text"
+            id="provider_name"
+            class="block w-full mt-1 p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            placeholder="Ingresa el nombre del proveedor"
+            required
+          />
+        </div>
+
+        <!-- Campo: Nombre de la empresa -->
+        <div>
+          <label for="company_name" class="block text-sm font-medium text-gray-700">Nombre de la Empresa</label>
+          <input
+            type="text"
+            id="company_name"
+            class="block w-full mt-1 p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            placeholder="Ingresa el nombre de la empresa"
+            required
+          />
+        </div> 
+        <!-- subir -->
+
+        <!-- Campo: Subir documento -->
+        <div>
+          <label for="upload_file" class="block text-sm font-medium text-gray-700">Subir Documento</label>
+          <input
+            type="file"
+            id="upload_file"
+            class="block w-full mt-1 text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:outline-none"
+            required
+          />
+          <p class="mt-1 text-xs text-gray-500">Formatos aceptados: PDF, DOCX, JPG</p>
+        </div>
       </div>
-    </div>
 
-    <!-- Botón de búsqueda reducido -->
-    <button
-      type="submit"
-      class="w-full sm:w-auto bg-blue-600 text-white py-1 px-4 rounded-lg hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-1 mb-4"
-    >
-      Buscar
-    </button>
+      <!-- Botón de envío -->
+      <div class="mt-6">
+        <button
+          type="submit"
+          class="w-auto bg-blue-600 text-white py-2 px-4 text-sm rounded-lg hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-1 focus:outline-none"
+        >
+          Registrar Proveedor
+        </button>
+      </div>
+    </form>
+  </div>
 
-    <!-- Texto ¿No estás registrado? -->
-    <div class="text-center">
-      <p class="text-sm text-gray-600 font-medium">
-        ¿No estás registrado? 
-        <span class="text-blue-600 hover:text-blue-800 cursor-pointer">Haz clic aquí para registrarte</span>
-      </p>
-    </div>
-  </form>
-</div>
+</body>
+</html>
