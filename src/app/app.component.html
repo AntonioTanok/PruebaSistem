@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,15 +8,18 @@
 </head>
 <body class="bg-gray-100">
 
-  <!-- Formulario -->
-  <div class="p-6 bg-gray-100 min-h-screen">
+  
+  
+
+</body>
+</html>
+
+
+<div class="p-6 bg-gray-100 min-h-screen">
     <form class="w-full max-w-screen-lg mx-auto bg-white rounded-lg shadow-md p-8">
-      <!-- Título -->
       <h2 class="text-3xl font-bold text-gray-800 mb-6">Registro de Proveedor</h2>
 
-      <!-- Contenedor de campos (grid de 2 columnas) -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- Campo: ID del proveedor -->
         <div>
           <label for="provider_id" class="block text-sm font-medium text-gray-700">ID del Proveedor</label>
           <input
@@ -28,7 +31,6 @@
           />
         </div>
 
-        <!-- Campo: Nombre del proveedor -->
         <div>
           <label for="provider_name" class="block text-sm font-medium text-gray-700">Nombre del Proveedor</label>
           <input
@@ -40,7 +42,6 @@
           />
         </div>
 
-        <!-- Campo: Nombre de la empresa -->
         <div>
           <label for="company_name" class="block text-sm font-medium text-gray-700">Nombre de la Empresa</label>
           <input
@@ -51,9 +52,7 @@
             required
           />
         </div> 
-        <!-- subir -->
 
-        <!-- Campo: Subir documento -->
         <div>
           <label for="upload_file" class="block text-sm font-medium text-gray-700">Subir Documento</label>
           <input
@@ -66,7 +65,6 @@
         </div>
       </div>
 
-      <!-- Botón de envío -->
       <div class="mt-6">
         <button
           type="submit"
@@ -76,7 +74,111 @@
         </button>
       </div>
     </form>
-  </div>
+  </div> -->
 
-</body>
-</html>
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta de Nuevo Proveedor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center p-8">
+  
+    <div class="w-full max-w-screen-lg bg-white shadow-lg rounded-lg p-8 overflow-auto">
+      <!-- Encabezado del formulario -->
+      <div class="mb-8">
+        <h1 class="text-3xl font-bold text-gray-800 text-center mb-6">Alta de Nuevo Proveedor</h1>
+        <div class="border border-gray-300 rounded-lg p-6 bg-gray-50">
+          <div class="grid grid-cols-2 gap-4">
+            <!-- Columna izquierda -->
+            <div class="text-base font-semibold text-gray-700 space-y-3">
+              <p>Nombre de la empresa:</p>
+              <p>RFC:</p>
+              <p>Domicilio Fiscal:</p>
+              <p>Nombre del representante legal:</p>
+              <p>Actividad Económica:</p>
+            </div>
+            <!-- Columna derecha -->
+            <div class="text-base text-gray-700 space-y-3">
+              <p>Jonathan / Servicios de Ingeniería en Computación SA de CV</p>
+              <p>SIC091224H53</p>
+              <p>Av Paraíso, 463, Sopeña, Silao, Guanajuato</p>
+              <p>Antonio Caudillo</p>
+              <p>Servicios de IT y venta de equipo de cómputo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Formulario de carga de archivos -->
+      <form>
+        <h2 class="text-2xl font-bold text-gray-800 mb-6">Documentación Requerida</h2>
+  
+        <!-- Campo de carga de archivos -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div>
+            <label for="acta_constitutiva" class="block text-sm font-medium text-gray-900 mb-2">Acta Constitutiva</label>
+            <input type="file" id="acta_constitutiva" class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:ring-blue-500 focus:border-blue-500" required />
+          </div>
+  
+          <div>
+            <label for="poder_representante" class="block text-sm font-medium text-gray-900 mb-2">Poder Representante Legal</label>
+            <input type="file" id="poder_representante" class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:ring-blue-500 focus:border-blue-500" required />
+          </div>
+  
+          <div>
+            <label for="identificacion_representante" class="block text-sm font-medium text-gray-900 mb-2">Identificación Representante Legal o Dueño</label>
+            <input type="file" id="identificacion_representante" class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:ring-blue-500 focus:border-blue-500" required />
+          </div>
+  
+          <div>
+            <label for="comprobante_domicilio" class="block text-sm font-medium text-gray-900 mb-2">Comprobante de Domicilio Fiscal</label>
+            <input type="file" id="comprobante_domicilio" class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:ring-blue-500 focus:border-blue-500" required />
+          </div>
+  
+          <div>
+            <label for="constancia_fiscal" class="block text-sm font-medium text-gray-900 mb-2">Constancia de Situación Fiscal</label>
+            <input type="file" id="constancia_fiscal" class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:ring-blue-500 focus:border-blue-500" required />
+          </div>
+  
+          <div>
+            <label for="opinion_sat" class="block text-sm font-medium text-gray-900 mb-2">Opinión de Cumplimiento Positiva SAT</label>
+            <input type="file" id="opinion_sat" class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:ring-blue-500 focus:border-blue-500" required />
+          </div>
+  
+          <div>
+            <label for="opinion_imss" class="block text-sm font-medium text-gray-900 mb-2">Opinión de Cumplimiento Positiva IMSS</label>
+            <input type="file" id="opinion_imss" class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:ring-blue-500 focus:border-blue-500" required />
+          </div>
+  
+          <div>
+            <label for="opinion_infonavit" class="block text-sm font-medium text-gray-900 mb-2">Opinión de Cumplimiento Positiva Infonavit</label>
+            <input type="file" id="opinion_infonavit" class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:ring-blue-500 focus:border-blue-500" required />
+          </div>
+  
+          <div>
+            <label for="estado_cuenta" class="block text-sm font-medium text-gray-900 mb-2">Estado de Cuenta Bancario</label>
+            <input type="file" id="estado_cuenta" class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:ring-blue-500 focus:border-blue-500" required />
+          </div>
+  
+          <div>
+            <label for="repse" class="block text-sm font-medium text-gray-900 mb-2">REPSE (Registro de Proveedores de Servicios Especializados)</label>
+            <input type="file" id="repse" class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:ring-blue-500 focus:border-blue-500" required />
+          </div>
+        </div>
+  
+        <!-- Botón de Enviar -->
+        <div class="mt-8 text-center">
+          <button type="submit" class="bg-blue-600 text-white py-2 px-6 text-sm rounded-lg hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+            Enviar Documentación
+          </button>
+        </div>
+      </form>
+    </div>
+  
+  </body>
+  </html>
+  
