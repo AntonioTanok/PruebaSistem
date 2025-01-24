@@ -141,6 +141,69 @@ Boton file para subir documentos
 
 
 
+<!-- Inicio de sesion -->
+
+<!-- Código de Inicio de Sesión -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio de Sesión</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-[url('/assets/images/fondo5.png')] bg-cover bg-center">
+
+  <div class="flex w-full max-w-4xl bg-white shadow-lg rounded-lg overflow-hidden">
+    <!-- Sección del formulario -->
+    <div class="w-1/2 p-8">
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">Inicia Sesión</h2>
+      <form>
+        <div class="mb-5">
+          <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Correo Electrónico</label>
+          <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="name@domain.com" required />
+        </div>
+        <div class="mb-5">
+          <label for="password" class="block mb-2 text-sm font-medium text-gray-900">Contraseña</label>
+          <input type="password" id="password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Password" required />
+        </div>
+        <div class="flex items-start mb-5">
+          <div class="flex items-center h-5">
+            <input id="remember" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300" />
+          </div>
+          <label for="remember" class="ml-2 text-sm font-medium text-gray-900">Recuérdame</label>
+        </div>
+        <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Iniciar Sesión</button>
+      </form>
+
+      <!-- Textos condicionales -->
+      <div class="mt-4">
+        <p class="text-sm text-gray-700">
+          ¿No tienes cuenta? 
+          <a href="#" class="text-blue-600 hover:underline">Regístrate aquí</a>
+        </p>
+        <p class="text-sm text-gray-700 mt-2">
+          ¿Olvidaste tu contraseña? 
+          <a href="#" class="text-blue-600 hover:underline">Recuperar aquí</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Sección de la imagen -->
+    <div class="w-1/2 bg-blue-500 relative">
+      <img src="/assets/images/20.png" alt="Logo de la empresa" class="h-full w-full object-cover">
+    </div>
+  </div>
+  
+</body>
+</html>
+
+
+
+
+
+
+
 
 <!-- Codigo Actualizado 21/01/2025 -->
 <!DOCTYPE html>
@@ -181,10 +244,6 @@ Boton file para subir documentos
 
       <!-- Textos condicionales -->
       <div class="mt-4">
-        <p class="text-sm text-gray-700">
-          ¿No estás registrado? 
-          <a href="#" class="text-blue-600 hover:underline">Haz clic aquí</a>
-        </p>
         <p class="text-sm text-gray-700 mt-2">
           ¿Olvidó Contraseña? 
           <a href="#" class="text-blue-600 hover:underline">Recuperar aquí</a>
