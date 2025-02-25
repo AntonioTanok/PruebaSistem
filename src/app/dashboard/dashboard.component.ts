@@ -9,4 +9,10 @@ import { RouterModule } from '@angular/router';
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
-export class DashboardComponent {}
+export class DashboardComponent {
+  cerrarSesion() {
+    localStorage.removeItem('token'); // Elimina el token de sesión
+    window.location.href = '/login'; // Redirige al login
+  }
+  
+}
