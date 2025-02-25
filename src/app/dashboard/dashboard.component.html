@@ -1,0 +1,92 @@
+<nav class="h-screen w-64 bg-green-300 dark:bg-gray-800 fixed top-0 left-0 flex flex-col justify-between shadow-lg">
+  
+    <div class="p-4">
+      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="assets/images/icono-Tanok-SCPT-2.png" class="h-10" alt="SCPT Logo" />
+        <span class="self-center text-xl font-semibold text-gray-800 dark:text-white">S C P T</span>
+      </a>
+    </div>
+  
+    
+    <ul class="flex-1 mt-4 space-y-2 text-gray-800 dark:text-white">
+      <li>
+        <a href="#" class="flex items-center p-3 text-sm font-medium rounded-lg hover:bg-green-400 dark:hover:bg-gray-700">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 6h18M3 14h18M3 18h18" />
+          </svg>
+          Home
+        </a>
+      </li>
+      <li>
+        <button
+          onclick="toggleSubmenu('proveedoresSubmenu')"
+          class="w-full flex items-center justify-between p-3 text-sm font-medium rounded-lg hover:bg-green-400 dark:hover:bg-gray-700"
+        >
+          <div class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V4m8 0v3m-4 5v3m-4 3v3m8-6v3" />
+            </svg>
+            Proveedores
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transition-transform" id="proveedoresIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M6 9l6 6 6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <ul id="proveedoresSubmenu" class="hidden pl-6 mt-2 space-y-2 border-l border-gray-700">
+          <li>
+            <a href="#" class="block py-2 px-3 text-sm hover:bg-green-400 rounded dark:hover:bg-gray-700">Alta Proveedor</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-sm hover:bg-green-400 rounded dark:hover:bg-gray-700">Cargar Factura</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <button
+          onclick="toggleSubmenu('catalogosSubmenu')"
+          class="w-full flex items-center justify-between p-3 text-sm font-medium rounded-lg hover:bg-green-400 dark:hover:bg-gray-700"
+        >
+          <div class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5h14M5 12h14M5 19h14" />
+            </svg>
+            Catálogos
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transition-transform" id="catalogosIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M6 9l6 6 6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <ul id="catalogosSubmenu" class="hidden pl-6 mt-2 space-y-2 border-l border-gray-700">
+          
+          <li><a href="#" class="block py-2 px-3 text-sm hover:bg-green-400 rounded dark:hover:bg-gray-700">Catálogo 1</a></li>
+          <li><a href="#" class="block py-2 px-3 text-sm hover:bg-green-400 rounded dark:hover:bg-gray-700">Catálogo 2</a></li>
+          <li><a href="#" class="block py-2 px-3 text-sm hover:bg-green-400 rounded dark:hover:bg-gray-700">Catálogo 3</a></li>
+          <li><a href="#" class="block py-2 px-3 text-sm hover:bg-green-400 rounded dark:hover:bg-gray-700">Catálogo 4</a></li>
+          <li><a href="#" class="block py-2 px-3 text-sm hover:bg-green-400 rounded dark:hover:bg-gray-700">Catálogo 5</a></li>
+          <li><a href="#" class="block py-2 px-3 text-sm hover:bg-green-400 rounded dark:hover:bg-gray-700">Catálogo 6</a></li>
+          <li><a href="#" class="block py-2 px-3 text-sm hover:bg-green-400 rounded dark:hover:bg-gray-700">Catálogo 7</a></li>
+          <li><a href="#" class="block py-2 px-3 text-sm hover:bg-green-400 rounded dark:hover:bg-gray-700">Catálogo 8</a></li>
+          <li><a href="#" class="block py-2 px-3 text-sm hover:bg-green-400 rounded dark:hover:bg-gray-700">Catálogo 9</a></li>
+          <li><a href="#" class="block py-2 px-3 text-sm hover:bg-green-400 rounded dark:hover:bg-gray-700">Catálogo 10</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="flex items-center p-3 text-sm font-medium rounded-lg hover:bg-green-400 dark:hover:bg-gray-700">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m0 0l4-4m-4 4l4 4" />
+          </svg>
+          Contactos
+        </a>
+      </li>
+    </ul>
+  
+    
+    <div class="p-4">
+      <a href="#" class="flex items-center p-3 text-sm font-medium rounded-lg hover:bg-green-400 dark:hover:bg-gray-700">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+        Cerrar sesión
+      </a>
+    </div>
+  </nav>
